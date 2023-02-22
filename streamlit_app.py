@@ -30,3 +30,17 @@ streamlit.dataframe(my_fruit_list)
 # Choose a Few Fruits to Set a Good Example
 
 streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index), ['Avocado', 'Strawberries'])
+
+# let  put a piclk ist here so the can  pick the fruitthey want to include:
+fruit_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index),['Avocado','Strawberries'])
+fruit_to_show = my_fruit_list.loc[fruits_selected]
+
+# Display the table on the page
+streamli.dataframe(fruits_to_show)
+
+
+
+
+
+
+
