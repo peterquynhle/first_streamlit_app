@@ -37,7 +37,7 @@ streamlit.header("Fruityvice Fruit Advice!")
 
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-streamlit.text(fruityvice_response.json())
+# comment out this line to remove json data from the app: "streamlit.text(fruityvice_response.json())"
 
 
 #🥋 Making the JSON Look Good
