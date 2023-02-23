@@ -42,7 +42,6 @@ import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"+ fruit_choice)
 # comment out this line to remove json data from the app: "streamlit.text(fruityvice_response.json())"
 
-
 #🥋 Making the JSON Look Good
 #take the json version of the response and normalize it
 fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
