@@ -37,7 +37,6 @@ streamlit.header("Fruityvice Fruit Advice!")
 fruit_choice = streamlit.text_input('What fruit would you like infromation about?', 'Kiwi')
 streamlit.write('The user entered', fruit_choice)
 
-
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"+ fruit_choice)
 # comment out this line to remove json data from the app: "streamlit.text(fruityvice_response.json())"
