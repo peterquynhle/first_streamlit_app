@@ -61,3 +61,6 @@ my_data_row = my_cur.fetchone()
 streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)
 
+
+insert into fruit_load_list values ('test');
+select * from fruit_load_list;
