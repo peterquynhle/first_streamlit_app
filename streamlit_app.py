@@ -65,7 +65,7 @@ streamlit.text("Hello from Snowflake:")
 streamlit.text(my_data_row)
 
 
-insert into fruit_load_list values ('test');
+insert into fruit_load_list values ('from streamlit');
 select * from fruit_load_list;
 
 streamlit.write('thanks for adding', add_my_fruit)
