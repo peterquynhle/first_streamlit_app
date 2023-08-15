@@ -64,3 +64,8 @@ streamlit.text(my_data_row)
 
 insert into fruit_load_list values ('test');
 select * from fruit_load_list;
+
+streamlit.write('thanks for adding', add_my_fruit)
+
+# this will not work correctly but just go with it for now
+my_cur.execute("insert into fruit_load_list values('from streamlit')")
