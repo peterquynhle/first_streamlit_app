@@ -28,7 +28,8 @@ streamlit.dataframe(fruits_to_show)
 
 
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + "fruit_choice")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+strealit.text(fruityvice_response.json())
 
 
 
