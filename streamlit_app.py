@@ -44,18 +44,6 @@ streamlit.dataframe(fruityvice_normalized)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 import snowflake.connector
 
 
@@ -67,6 +55,12 @@ streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
 
+
+
+#Add a second text box
+# streamlit.header('What would you like to add!')
+add_my_fruit = streamlit.text_input('What would you like to add?', 'jackfruit')
+streamlit.write('Thanks for adding', add_my_fruit)
 
 
 
