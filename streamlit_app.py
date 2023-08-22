@@ -90,9 +90,9 @@ if streamlit.button('Add a Fruit to the List'):
 fruityvice_add = requests.get("https://fruityvice.com/api/fruit/" + add_my_fruit)
 
 #take the json version of the add and normalize it
-fruityvice_normalized2 = pandas.json_normalize(fruityvice_add.json())
+#fruityvice_normalized2 = pandas.json_normalize(fruityvice_add.json())
 # output it the screen as a table
-streamlit.dataframe(fruityvice_normalized2)
+#streamlit.dataframe(fruityvice_normalized2)
 
 
 
